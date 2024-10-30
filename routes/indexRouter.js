@@ -1,6 +1,6 @@
-const express = require("express");
+const { Router } = require("express");
 
-const indexRouter = express.Router();
+const indexRouter = Router();
 
 indexRouter.get("/", (req, res, next) => {
   res.render("index", { title: "Express" });
